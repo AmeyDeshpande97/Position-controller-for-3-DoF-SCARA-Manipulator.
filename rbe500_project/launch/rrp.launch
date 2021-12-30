@@ -1,0 +1,13 @@
+<launch>
+
+    
+
+    <!-- Inverse-kinematics server -->
+    <node name="rrp_server_node" pkg="rbe500_project" type="rrp_ik_server.py">
+    </node>
+
+    <!-- Inverse-kinematics client -->
+    <node name="rrp_client_node" pkg="rbe500_project" type="rrp_pid.py" output="screen">
+    </node>
+      
+</launch>
